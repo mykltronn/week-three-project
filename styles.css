@@ -1,0 +1,138 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font: 300 24px/4 "Raleway", monospace, sans-serif;
+  text-align: center;
+}
+
+#calc-box {
+  height: 500px;
+  width: 400px;
+  margin: auto;
+  margin-top: 80px;
+  background-color: #61B34F;
+  display: grid;
+  grid-template-rows: 20%;
+  grid-template-columns: 25%;
+}
+
+.input-box {
+  border: 1px solid white;
+  color: white;
+}
+
+.operator {
+  background-color: #82C276;
+  color: black;
+}
+
+#clear {
+  grid-area: 1 / 1 / 2 / 2;
+  border-top: none;
+  border-left: none;
+  border-right:none;
+}
+#field {
+  grid-area: 1 / 2 / 2 / 5;
+  border-top: none;
+  border-right: none;
+}
+
+
+#seven {
+  grid-area: 2 / 1 / 3 / 2;
+  border: none;
+}
+#eight {
+  grid-area: 2 / 2 / 3 / 3;
+  border-top: none;
+  border-bottom: none;
+}
+#nine {
+  grid-area: 2 / 3 / 3 / 4;
+  border: none;
+}
+#divide {
+  grid-area: 2 / 4 / 3 / 5;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+
+#four {
+  grid-area: 3 / 1 / 4 / 2;
+  border-left: none;
+  border-right: none;
+}
+#five {
+  grid-area: 3 / 2 / 4 / 3;
+}
+#six {
+  grid-area: 3 / 3 / 4 / 4;
+  border-right: none;
+  border-left: none;
+}
+#multiply {
+  grid-area: 3 / 4 / 4 / 5;
+  border-right: none;
+}
+
+
+
+#one {
+  grid-area: 4 / 1 / 5 / 2;
+  border: none;
+}
+#two {
+  grid-area: 4 / 2 / 5 / 3;
+  border-top: none;
+  border-bottom: none;
+}
+#three {
+  grid-area: 4 / 3 / 5 / 4;
+  border: none;
+}
+#subtract {
+  grid-area: 4 / 4 / 5 / 5;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+
+
+#zero {
+  grid-area: 5 / 1 / 6 / 2;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+#decimal {
+  grid-area: 5 / 2 / 6 / 3;
+  border-bottom: none;
+}
+#equals {
+  grid-area: 5 / 3 / 6 / 4;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+#add {
+  grid-area: 5 / 4 / 6 / 5;
+  border-right: none;
+  border-bottom: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+/*whitespace*/
