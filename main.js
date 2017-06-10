@@ -49,9 +49,36 @@ console.log(multiply);
 //equals key will turn that array in to a string and return its value?
 
 //clear key will both reset the valuesArray AND clear the field
+clearKey does this:
+clearKey.value = "";
+valuesArray = [];
+
 
 //functions:
+// -
 // - function storeAndPrint
+function storeAndPrint (){
+
+}
 // - function clearAndEmpty
 // - function createAndAppend
 // -
+
+//how to avoid writing and even listener for every key
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// whitespace
