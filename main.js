@@ -13,10 +13,11 @@ for (i = 0; i < keyParent.children.length; i++) {
 
     actualKey.addEventListener('click', function(event) {
       let keyData = actualKey.innerHTML;
-        if (actualKey[9]) {
+        if (keyData === "x") {
           keyData = "*";
           valuesArray.push(keyData);
           fieldDiv.innerHTML += (" x");
+          console.log(keyData);
           }
         else {
           valuesArray.push(keyData);

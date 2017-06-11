@@ -1,6 +1,20 @@
+console.log("running on test.js");
+
+//test adding class to button for styling
+
+//complete, working.
+
+var button = document.getElementById('zero');
 
 
-var button 
+button.addEventListener('click', function(){
+  button.classList.add('input-press');
+  window.setTimeout( function(){button.classList.remove('input-press');}, 50);
+
+});
+
+// try turning anonymous function to external function
+// -- ?? does external function need to accept a parameter in order to point to the 'button' or will it operate on 'button' because it is called inside the event listener?
 
 
 
@@ -8,22 +22,50 @@ var button
 
 
 
-// console.log("running on test.js");
+
+// window.setTimeout(function() {
+//     console.log("This was delayed by one second!");
+// }, 1000);
+
+
+// var someVar;
+// someVar = some_other_function();
+// alert(someVar);
+// someObj.addEventListener("click", function(){
+//     some_function(someVar);
+// }, false);
+
+
+// doesn't work vvvv
+
+//
 //
 //
 // var testArray = [10, "+", 10, "/", 2, "x", 2]
 //
 // for (i = 0; i < testArray.length; i++) {
-//   let arrayItem = testArray[i];
-//   if (arrayItem[i] = "x") {
-//   arrayItem = "*";
-//   };
-// };
+//   // var arrayItem = testArray[i];
+//   if (testArray[i] = 10) {
+//   testArray[i] = "*";
+//   }
+// }
 //
 //
 // console.log(testArray);
 
-
+// does work! vvvv
+//
+// var testArray = [10, '+', 10, '/', 2, 'x', 2];
+//
+// for (i = 0; i < testArray.length; i++) {
+//   let arrayItem = testArray[i];
+//   if (arrayItem === "x") {
+//     arrayItem = "*";
+//     testArray[i] = arrayItem;
+//   }
+// }
+//
+// console.log(testArray);
 
 
 
