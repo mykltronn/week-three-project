@@ -39,7 +39,6 @@ equals.addEventListener('click', function(event){
 
 
 // Things remaining:
-// -- why doesn't the x-check work? It should change x to * and push it to the array.
 
 // -- remove spaces between contiguous integers
 
@@ -48,10 +47,10 @@ equals.addEventListener('click', function(event){
 
 // --clear field after an equation has been evaluated and new key has been pressed.  need to clear field if fieldDiv.innerHTML == evaluation? but this seems to break the loop. I think the calculator will work the first time the page is loaded, but from the first time evaluation is called onward fieldDiv.innerHTML will always equal eval. So find workaround.
 
-// -- style button for press. When adding a styling class, as long as the js style class is after the origin class, it should supercede only the code that is address in the selector. IF, that is, js ADDS a class, not replaces it.
+// -- style button for press.
 
 
-// -- add user-input control. user can't take multiple operands in a row.
+// -- add user-input error control. user can't take multiple operands in a row.
 
 // -- add modulus key
 
