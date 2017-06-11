@@ -12,9 +12,9 @@ for (i = 0; i < keyParent.children.length; i++) {
     actualKey = keyParent.children[i];
 
     actualKey.addEventListener('click', function(event) {
-      var keyData = actualKey.innerHTML;
+      let keyData = actualKey.innerHTML;
         if (actualKey[9]) {
-          keyData = "*"
+          keyData = "*";
           valuesArray.push(keyData);
           fieldDiv.innerHTML += (" x");
           }
@@ -24,7 +24,6 @@ for (i = 0; i < keyParent.children.length; i++) {
       };
     });
   };
-
 };
 
 clear.addEventListener('click', function() {
@@ -37,13 +36,24 @@ equals.addEventListener('click', function(event){
   fieldDiv.innerHTML = evaluation;
 });
 
+
 // Things remaining:
 // -- why doesn't the x-check work? It should change x to * and push it to the array.
+
+// -- remove spaces between contiguous integers
+
+
+//Bonus features
 
 // --clear field after an equation has been evaluated and new key has been pressed.  need to clear field if fieldDiv.innerHTML == evaluation? but this seems to break the loop. I think the calculator will work the first time the page is loaded, but from the first time evaluation is called onward fieldDiv.innerHTML will always equal eval. So find workaround.
 
 // -- style button for press. When adding a styling class, as long as the js style class is after the origin class, it should supercede only the code that is address in the selector. IF, that is, js ADDS a class, not replaces it.
 
-// -- style cursor for pointer ""        ""
 
-// --
+// -- add user-input control. user can't take multiple operands in a row.
+
+// -- add modulus key
+
+// -- and exponentiation key
+
+// -- parentheses key
